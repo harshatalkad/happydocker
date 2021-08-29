@@ -1,0 +1,198 @@
+{
+   "resourceType": "Bundle",
+   "type": "transaction",
+   "entry":    [
+      {//1912881
+         "request": {
+            "method": "POST",
+            "url" : "http://hapi.fhir.org/baseR4/PractitionerRole"
+         },
+         "resource":          {
+            "resourceType": "PractitionerRole",
+            "active": true,
+            "practitioner": {
+              "reference": "Practitioner/1912758",
+              "type": "Practitioner"
+            },
+            "organization": {
+              "reference": "Organization/1912733",
+              "type": "Organization"
+            },
+            "location": {
+              "reference": "Location/1912740",
+              "type": "Location"
+            },
+            "healthcareService": {
+              "reference": "HealthcareService/1863096",
+              "type": "HealthcareService"
+            },
+            "code": [ {
+              "coding": [ {
+                "system": "http://terminology.hl7.org/CodeSystem/practitioner-role",
+                "code": "doctor"
+              } ]
+            } ]
+          }
+        },
+        {//1912882
+         "request": {
+            "method": "POST",
+            "url" : "http://hapi.fhir.org/baseR4/PractitionerRole"
+         },
+         "resource":          {
+            "resourceType": "PractitionerRole",
+            "active": true,
+            "practitioner": {
+              "reference": "Practitioner/1912759",
+              "type": "Practitioner"
+            },
+            "organization": {
+              "reference": "Organization/1912733",
+              "type": "Organization"
+            },
+            "location": {
+              "reference": "Location/1912740",
+              "type": "Location"
+            },
+            "healthcareService": {
+              "reference": "HealthcareService/1863096",
+              "type": "HealthcareService"
+            },
+            "code": [ {
+              "coding": [ {
+                "system": "http://terminology.hl7.org/CodeSystem/practitioner-role",
+                "code": "doctor"
+              } ]
+            } ]
+          }
+        },
+        {//1912883
+         "request": {
+            "method": "POST",
+            "url" : "http://hapi.fhir.org/baseR4/PractitionerRole"
+         },
+         "resource":          {
+            "resourceType": "PractitionerRole",
+            "active": true,
+            "practitioner": {
+              "reference": "Practitioner/1912758",
+              "type": "Practitioner"
+            },
+            "organization": {
+              "reference": "Organization/1912733",
+              "type": "Organization"
+            },
+            "location": {
+              "reference": "Location/1912741",
+              "type": "Location"
+            },
+            "healthcareService": {
+              "reference": "HealthcareService/1863096",
+              "type": "HealthcareService"
+            },
+            "code": [ {
+              "coding": [ {
+                "system": "http://terminology.hl7.org/CodeSystem/practitioner-role",
+                "code": "doctor"
+              } ]
+            } ]
+          }
+        },
+        {//1912884
+         "request": {
+            "method": "POST",
+            "url" : "http://hapi.fhir.org/baseR4/PractitionerRole"
+         },
+         "resource":          {
+            "resourceType": "PractitionerRole",
+            "active": true,
+            "practitioner": {
+              "reference": "Practitioner/1912759",
+              "type": "Practitioner"
+            },
+            "organization": {
+              "reference": "Organization/1912733",
+              "type": "Organization"
+            },
+            "location": {
+              "reference": "Location/1912741",
+              "type": "Location"
+            },
+            "healthcareService": {
+              "reference": "HealthcareService/1863096",
+              "type": "HealthcareService"
+            },
+            "code": [ {
+              "coding": [ {
+                "system": "http://terminology.hl7.org/CodeSystem/practitioner-role",
+                "code": "doctor"
+              } ]
+            } ]
+          }
+        },
+        {//1912885
+         "request": {
+            "method": "POST",
+            "url" : "http://hapi.fhir.org/baseR4/PractitionerRole"
+         },
+         "resource":          {
+            "resourceType": "PractitionerRole",
+            "active": true,
+            "practitioner": {
+              "reference": "Practitioner/1912758",
+              "type": "Practitioner"
+            },
+            "organization": {
+              "reference": "Organization/1912733",
+              "type": "Organization"
+            },
+            "location": {
+              "reference": "Location/1912742",
+              "type": "Location"
+            },
+            "healthcareService": {
+              "reference": "HealthcareService/1863096",
+              "type": "HealthcareService"
+            },
+            "code": [ {
+              "coding": [ {
+                "system": "http://terminology.hl7.org/CodeSystem/practitioner-role",
+                "code": "doctor"
+              } ]
+            } ]
+          }
+        },
+        {//1912886
+         "request": {
+            "method": "POST",
+            "url" : "http://hapi.fhir.org/baseR4/PractitionerRole"
+         },
+         "resource":          {
+            "resourceType": "PractitionerRole",
+            "active": true,
+            "practitioner": {
+              "reference": "Practitioner/1912760",
+              "type": "Practitioner"
+            },
+            "organization": {
+              "reference": "Organization/1912733",
+              "type": "Organization"
+            },
+            "location": {
+              "reference": "Location/1912742",
+              "type": "Location"
+            },
+            "healthcareService": {
+              "reference": "HealthcareService/1863096",
+              "type": "HealthcareService"
+            },
+            "code": [ {
+              "coding": [ {
+                "system": "http://terminology.hl7.org/CodeSystem/practitioner-role",
+                "code": "doctor"
+              } ]
+            } ]
+          }
+        }
+   ]
+}
