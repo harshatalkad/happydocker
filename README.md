@@ -23,7 +23,7 @@ In order to use this project, you should have:
 Here are the step by step instructions along with commands to execute to run the HAPI FHIR server in a Docker container
 
 - Clone the repo 
-	- `$ git clone https://github.com/harshatalkad/happydocker.git`
+	- `$ git clone -b hackathon2021 https://github.com/harshatalkad/happydocker.git`
 - Change to the project directory in a terminal
 	- `$ cd happydocker`
 - Build the project 

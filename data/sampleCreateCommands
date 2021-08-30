@@ -1,6 +1,5 @@
 sh createOrg.sh 'OrgId1' 'Talkad HealthCare'
-sh createLocation.sh '1' 'Talkad HealthCare' '50 Fremont St' 'SanFrancisco' 'CA'
-'95000' 'USA'
+sh createLocation.sh '1' 'Talkad HealthCare' '50 Fremont St' 'SanFrancisco' 'CA' '95000' 'USA'
 sh createPractitioner.sh 'NPI1' 'Harsha' 'Talkad' 'male'
 sh createSlots.sh '3' '2' '2021-08-30T00:00:00Z'
 
