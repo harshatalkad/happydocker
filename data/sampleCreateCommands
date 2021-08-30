@@ -1,0 +1,11 @@
+sh createOrg.sh 'OrgId1' 'Talkad HealthCare'
+sh createLocation.sh '1' 'Talkad HealthCare' '50 Fremont St' 'SanFrancisco' 'CA'
+'95000' 'USA'
+sh createPractitioner.sh 'NPI1' 'Harsha' 'Talkad' 'male'
+sh createSlots.sh '3' '2' '2021-08-30T00:00:00Z'
+
+
+curl --location --request GET 'http://localhost:8090/fhir/Organization/_history'
+curl --location --request GET 'http://localhost:8090/fhir/Location/_history'
+curl --location --request GET 'http://localhost:8090/fhir/Practitioner/_history'
+curl --location --request GET 'http://localhost:8090/fhir/Slot/_history'

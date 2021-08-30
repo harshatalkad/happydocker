@@ -1,0 +1,10 @@
+    //1912733
+{
+  "resourceType": "Organization",
+  "identifier": [ {
+    "system": "https://apb3.my.stmfa.stm.salesforce.com/",
+    "value": "00DR0000000LQOq"
+  } ],
+  "active": true,
+  "name": "interop232"
+}

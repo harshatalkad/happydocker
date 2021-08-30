@@ -1,0 +1,14 @@
+{
+   "resourceType": "Location",
+   "name": "${name}",
+   "alias": ["${name}"],
+   "status": "active",
+   "address": {
+     "line": "${address1}",
+     "city": "${city}",
+     "state": "${state}",
+     "postalCode": "${postalCode}",
+     "country": "${country}"
+   },
+   "managingOrganization": "Organization/${orgId}"
+}

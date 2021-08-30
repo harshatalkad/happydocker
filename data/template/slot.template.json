@@ -1,0 +1,25 @@
+{
+   "resourceType": "Slot",
+   "serviceCategory": [{"coding": [            {
+      "code": "17",
+      "display": "General Practice"
+   }]}],
+   "serviceType": [{"coding": [            {
+      "code": "57",
+      "display": "Immunization"
+   }]}],
+   "specialty": [{"coding": [            {
+      "code": "408480009",
+      "display": "Clinical immunology"
+   }]}],
+   "appointmentType": [{"coding": [            {
+      "code": "CHECKUP",
+      "display": "CHECKUP"
+   }]}],
+   "schedule": {
+      "reference": "Schedule/${scheduleId}"
+   },
+   "start": "${startDate}",
+   "end": "${endDate}",
+    "status" : "free"
+}

@@ -1,0 +1,9 @@
+{
+  "resourceType": "Organization",
+  "identifier": [ {
+    "system": "https://local.hapi.fhir.docker.com/",
+    "value": "${sfOrgId}"
+  } ],
+  "active": true,
+  "name": "${orgName}"
+}

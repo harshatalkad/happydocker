@@ -1,0 +1,24 @@
+{
+            "resourceType": "Schedule",
+            "active": true,
+            "serviceCategory": [{"coding": [            {
+               "code": "17",
+               "display": "General Practice"
+            }]}],
+            "serviceType": [{"coding": [            {
+               "code": "57",
+               "display": "Immunization"
+            }]}],
+            "specialty": [{"coding": [            {
+               "code": "408480009",
+               "display": "Clinical immunology"
+            }]}],
+            "actor":             [
+               {"reference": "Practitioner/${practitionerId}"},
+               {"reference": "Location/${facilityId}"}
+            ],
+            "planningHorizon":             {
+               "start": "${startDate}",
+               "end": "${endDate}"
+            }
+         }
