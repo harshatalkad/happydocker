@@ -1,4 +1,6 @@
-# hapi-data-gen
+# HAPI Data Generator Scripts
+
+
 This is not a full fledged script, but it is easy to generate test data for simple testing. Feel free to contribute make this script more dynamic.
 The slots will be created with below listed code. If need different code, we need to enhance it further.
 
@@ -7,40 +9,51 @@ The slots will be created with below listed code. If need different code, we nee
 - specialty code as "408480009" for "Clinical immunology"
 - appointmentType as code "CHECKUP"
 
-# Prerequisite 
-You must have Practitioner, Location in HAPI sandbox. (I am planning create new script for createing practioner and location)
+Run the commands from data directory.
 
-# Command
-cd <cloned dir>/hapi-data
+## Commands and Examples
+
+### Create Organization
+- `$ sh createOrg.sh <OrganizationId> <OrganizationName>`
+	- Example : `$  sh createOrg.sh 'OrgId1' 'Talkad HealthCare'`
+- Get the internal organization id  ( here it is 1)
+```
+ "entry": [ {
+    "fullUrl": "http://localhost:8080/fhir/Organization/1",
+    "resource": {
+      "resourceType": "Organization",
+      "id": "1",
+```
+	
+### Create Facility/Location	
+- `$ sh createLocation.sh <InternalOrgId> <FaclityName> <FacilityStreet> <FacilityCity> <FacilityState> <FacilityPostal> <FacilityCountry>`
+	- Example :  `$ sh ./createLocation.sh '1' 'Talkad HealthCare' '50 Fremont St' 'SanFrancisco' 'CA'
+'95000' 'USA'`
+- Get the internal Facility id (here it is 2)
+```
+ "entry": [ {
+    "fullUrl": "http://localhost:8080/fhir/Location/2",
+    "resource": {
+      "resourceType": "Location",
+      "id": "2",
+```
+
+### Create Pracititioner
+- `$ sh creaetPractitioner.sh <NPI> <FirstName> <LastName> <Gender>`
+	- Example : `$ sh ./createPractitioner.sh 'NPI1' 'Harsha' 'Talkad' 'male'`
+- Get the internal practitioner id (here it is 3)
+```
+  "entry": [ {
+    "fullUrl": "http://localhost:8080/fhir/Practitioner/3",
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "3",
+```
+
+### Create Slots for a day
+- `$ sh createSlots.sh <PractitionerId> <FacilityId> <Date>' `
+- Example : `$ sh createSlots.sh '3' '2' '2021-08-30T00:00:00Z' `  
   
-./createSlot.sh P1 P2 P3 P4
-
-- P1 - external-practitioner-id
-- P2 - external-facility-id
-- P3 - slot-start-time in UTC
-- P4 - slot-end-time in UTC
-
-# To create multiple slots for given day
-
-./createSlots.sh P1 P2 P3 P4
-
-- P1 - external-practitioner-id
-- P2 - external-facility-id
-- P3 - day (example: 2021-04-25)
-- P4 - Optional field. If not passed, it will generate 45 minues slots from UTC time 15:00 to 23:00. If pass "-h1", it will generate 45 minutes slots from UTC time 15:00 to 18:00. If pass "-h2", it will generate 45 minutes slots for UTC time 19:00 to 23:00.
-
-
-![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Note: Tested on mac os.
-
-# Example:  
-./createSlot.sh 1912758 1912740 2021-06-25T21:00:00Z 2021-06-25T21:45:00Z
-
-
-# Existing Practitioner and Facility Id on HAPI
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) It may get reset anytime by HAPI
-
-| Practitioner | Practitioner Id |  Practitioner NPI  |
-| :---:   | :---:   | :-: |
-| Charles | 1912758 | 324234 |
-| Anna | 1912759 | 4243424243 |
-| April | 1912760 | 3242423 |
+### Create one slot
+- `$ sh createSlot.sh <PractitionerId> <FacilityId> <StartTime> <EndTime>' `
+- Example : `$ sh createSlot.sh '3' '2' '2021-08-29T00:00:00Z' '2021-08-29T01:00:00Z' `  `  
