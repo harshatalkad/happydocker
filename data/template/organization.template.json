@@ -1,9 +1,0 @@
-{
-  "resourceType": "Organization",
-  "identifier": [ {
-    "system": "https://apb3.my.stmfa.stm.salesforce.com/",
-    "value": "${sfOrgId}"
-  } ],
-  "active": true,
-  "name": "${orgName}"
-}
