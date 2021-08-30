@@ -61,6 +61,8 @@ Here are the step by step instructions along with commands to execute to run the
 
 
 ## Insert the data
+- `$ cd data`
+- Read the Readme
 
 
 
